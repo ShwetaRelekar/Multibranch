@@ -1,0 +1,16 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Code') { 
+            steps {
+                sh 'echo "Developing code" '
+            }
+        }
+        stage('Build') { 
+            steps {
+               sh 'echo "Artifacts" '
+            }
+        }
+        
+    }
+}
